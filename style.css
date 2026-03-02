@@ -945,3 +945,36 @@ img {
     font-size: 4.5rem;
   }
 }
+
+/* --- IMAGE BREAK --- */
+.img-break {
+  position: relative;
+  height: 480px;
+  overflow: hidden;
+}
+
+.img-break img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-break__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-break__overlay p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(1.8rem, 4vw, 3.5rem);
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.08em;
+  text-align: center;
+  padding: 0 2rem;
+}
